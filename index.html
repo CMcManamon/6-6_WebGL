@@ -1,0 +1,28 @@
+<!-- https://assetstore.unity.com/packages/tools/gui/responsive-webgl-template-117308 -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | 6-6</title>
+  </head>
+  <body style="text-align: center">
+    <canvas
+      id="unity-canvas"
+      style="width: 600px; height: 960px; background: #231F20"
+    ></canvas>
+    <script src="Build/6-6_WebGL_Build.loader.js"></script>
+    <script>
+            createUnityInstance(document.querySelector("#unity-canvas"), {
+              dataUrl: "Build/6-6_WebGL_Build.data.unityweb",
+              frameworkUrl: "Build/6-6_WebGL_Build.framework.js.unityweb",
+              codeUrl: "Build/6-6_WebGL_Build.wasm.unityweb",
+              streamingAssetsUrl: "StreamingAssets",
+              companyName: "CM900 Games",
+              productName: "6-6",
+              productVersion: "2.0",
+            });
+    </script>
+    <script src="TemplateData/responsive.javascript"></script>
+  </body>
+</html>
